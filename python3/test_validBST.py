@@ -15,6 +15,11 @@
 ##-1   4
 ##return false
 ##... etc.
+##
+##
+## NOTE: to run these tests, navigate to this directord and: `python -m unittest discover -v validBST`
+## or you can do, `python test_validBST.py` in this directory 
+
 import unittest
 from validBST import getRootVal
 from validBST import getLeftChild
