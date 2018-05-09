@@ -21,9 +21,9 @@
 ## or you can do, `python test_validBST.py` in this directory 
 
 import unittest
-from validBST import getRootVal
-from validBST import getLeftChild
-from validBST import getRightChild
+from fundamentalTreeOps import getRootVal
+from fundamentalTreeOps import getLeftChild
+from fundamentalTreeOps import getRightChild
 from validBST import inorderValList
 
 class TestBSTCheckerMethods(unittest.TestCase):

@@ -49,7 +49,7 @@ def inorderValList(tree, inorderTrav=None):
            isValidBST = False
   return isValidBST 
 
-# preorder traversal of list of list check if valid BST
+# TODO: get preorder traversal to work
 def preorderValidBST(root, maxVal, minVal):
     if getLeftChild(root) != []:
         maxVal = max(maxVal, getRootVal(getLeftChild(root)))
@@ -69,15 +69,15 @@ def preorderValidBST(root, maxVal, minVal):
 
 # instead of list of lists let's assume node class
 
-def inorderValList(tree, inorderTrav=None):
-  if inorderTrav == None:
-      inorderTrav = []
-  if tree != []:
-      inorderValList(getLeftChild(tree), inorderTrav)
-      inorderTrav.append(getRootVal(tree))
-      inorderValList(getRightChild(tree),inorderTrav)
-  isValidBST = True
-  for i in range(0, len(inorderTrav)-1):
-      if inorderTrav[i] > inorderTrav[i+1]:
-           isValidBST = False
-  return isValidBST 
+#def inorderValList(tree, inorderTrav=None):
+#  if inorderTrav == None:
+#      inorderTrav = []
+#  if tree != []:
+#      inorderValList(getLeftChild(tree), inorderTrav)
+#      inorderTrav.append(getRootVal(tree))
+#      inorderValList(getRightChild(tree),inorderTrav)
+#  isValidBST = True
+#  for i in range(0, len(inorderTrav)-1):
+#      if inorderTrav[i] > inorderTrav[i+1]:
+#           isValidBST = False
+#  return isValidBST 
